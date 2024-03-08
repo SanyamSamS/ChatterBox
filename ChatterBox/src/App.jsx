@@ -1,25 +1,17 @@
-import { useState } from 'react'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Outlet } from 'react-router-dom';
+
+import Sidebar from './components/Sidebar';
+import RecentChats from './components/RecentChats';
+import ChatArea from './components/ChatArea';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-    <div className="container">
-      <div className="row">
-        <div className="col">
-          Test Column 1
-        </div>
-        <div className="col">
-          Test Column 2
-        </div>
-        <Outlet />
-      </div>
+    <div className="d-flex" style={{height: '100vh'}}>
+      <Sidebar />
+      <RecentChats />
+      <ChatArea />
     </div>
-    </>
   )
 }
 
