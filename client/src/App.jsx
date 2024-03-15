@@ -5,10 +5,10 @@ import Sidebar from './components/Sidebar';
 import RecentChats from './components/RecentChats';
 import ChatArea from './components/ChatArea';
 
-const express = require('express');
-const session = require('express-session');
+// const express = require('express');
+// const session = require('express-session');
 
-const app = express();
+// const app = express();
 
 
 
