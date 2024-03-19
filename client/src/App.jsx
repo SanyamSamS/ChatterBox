@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Sidebar from './components/Sidebar';
 import RecentChats from './components/RecentChats';
 import ChatArea from './components/ChatArea';
+import Header from './components/Header';
 
 // const express = require('express');
 // const session = require('express-session');
@@ -14,11 +15,14 @@ import ChatArea from './components/ChatArea';
 
 function App() {
   return (
-    <div className="d-flex" style={{height: '100vh'}}>
+    <main>
+    <Header />
+    <div className="main-container" style={{height: '90vh'}}>
       <Sidebar />
       <RecentChats />
       <ChatArea />
     </div>
+    </main>
   );
 };
 
