@@ -1,9 +1,8 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Sidebar from './components/Sidebar';
-import RecentChats from './components/RecentChats';
-import ChatArea from './components/ChatArea';
+import Messages from './pages/Messages';
+import Login from './pages/Login';
 import Header from './components/Header';
 
 // const express = require('express');
@@ -11,19 +10,24 @@ import Header from './components/Header';
 
 // const app = express();
 
-
+const user = false // change to true to see messages
 
 function App() {
+  if (!user){
   return (
     <main>
     <Header />
-    <div className="main-container" style={{height: '90vh'}}>
-      <Sidebar />
-      <RecentChats />
-      <ChatArea />
-    </div>
+    <Login  />
     </main>
-  );
-};
+  )} 
+  else {
+    return (
+      <main>
+      <Header />
+      <Messages  />
+      </main>
+    )
+  }
+}
 
 export default App
