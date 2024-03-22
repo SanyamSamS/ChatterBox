@@ -18,7 +18,7 @@ function Messages({user}) {
         <Sidebar />
         <div style={{ flexGrow: 1 }}>
           <ChatEngine
-            height="90vh"
+            height="88vh"
             width="80vw"
             projectID="ad9c9194-9e13-41fe-9ae3-d6510a62a0f4" 
             userName={user.username}
