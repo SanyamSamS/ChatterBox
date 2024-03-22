@@ -18,7 +18,7 @@ router.post('/signup', async (req, res) => {
   }
 });
 
-router.post('/login', async (req, res) => {
+router.post('/', async (req, res) => {
     console.log('Login route hit');
     console.log('Email:', req.body.email);
     console.log('Password:', req.body.password);
