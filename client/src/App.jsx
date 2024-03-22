@@ -12,11 +12,11 @@ function App() {
 
   return (
     <div>
-      {/* {!user ? (
+      {!user ? (
         <Login onAuth={setUser} />
       ) : (
         <Messages user={user} />
-      )} */}
+      )}
       <p>Hello world</p>
 
     </div>
