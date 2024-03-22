@@ -11,10 +11,13 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 
-const corsOptions = {
-    origin: process.env.CORS_ORIGIN,
-    optionSuccessStatus: 200,
-}
+// const corsOptions = {
+//     origin: process.env.CORS_ORIGIN,
+//     optionSuccessStatus: 200,
+//     credentials: true,
+//     allowedHeaders: 'Content-Type,Authorization',
+//     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE'
+// }
 
 const sess = {
     secret: 'secret',
@@ -28,17 +31,15 @@ app.use(session(sess));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors(corsOptions));
+app.use(cors());
 
 app.use('/api', routes);
-
-
     
-    app.use(express.static(path.join(__dirname, '../client/dist')));
-    
-    app.get('*', (req, res) => {
-        res.sendFile(path.join(__dirname, '../client/dist/index.html'));
-    });
+app.use(express.static(path.join(__dirname, '../client/dist')));
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/dist/index.html'));
+});
 
 
 
