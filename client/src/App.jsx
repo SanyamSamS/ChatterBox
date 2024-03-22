@@ -6,12 +6,6 @@ import Login from './pages/Login';
 
 import { useState } from 'react';
 
-// const express = require('express');
-// const session = require('express-session');
-
-// const app = express();
-// change to true to see messages
-
 function App() {
 
   const [user, setUser] = useState(undefined)
