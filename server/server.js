@@ -10,6 +10,12 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+
+const corsOptions = {
+    origin: process.env.CORS_ORIGIN,
+    optionSuccessStatus: 200,
+}
+
 const sess = {
     secret: 'secret',
     cookie: {}, 
@@ -22,7 +28,7 @@ app.use(session(sess));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors({origin: true}));
+app.use(cors(corsOptions));
 
 app.use('/api', routes);
 
