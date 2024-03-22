@@ -33,12 +33,12 @@ db.once('open', () => {
 
 // Placeholder authentication middleware
 app.post("/authenticate", async (req, res) => {
-    const { username } = req.body;
+    const { username, password } = req.body;
 
     try {
         const userAuth = await axios.put(
             'https://api.chatengine.io/users/',
-            {username: username, secret: username, first_name: username},
+            {username: username, secret: password, first_name: username},
             {headers: { "private-Key": process.env.CHAT_ENGINE_PRIVATE_KEY}}
         )
     return res.status(200).json(userAuth.data);

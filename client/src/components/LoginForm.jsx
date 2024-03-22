@@ -1,8 +1,23 @@
+import axios from "axios";
+import { useState } from "react"; // Import useState
+
 function LoginForm(props) {
+  // Initialize state for username and password
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    const { value } = e.target[0];
-    props.onAuth({ username: value, secret: value })
+
+    // Use state values for username and password in the request
+    axios.post("http://localhost:3000/authenticate", { username, password })
+      .then((r) => {
+        // Assuming your server responds with appropriate data for ChatEngine authentication
+        props.onAuth({ username, secret: password }); // Use the state values directly
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   };
 
   return (
@@ -12,7 +27,25 @@ function LoginForm(props) {
 
         <div className="auth">
           <div className="auth-label">Username</div>
-          <input className="auth-input" name="username" />
+          <input
+            type="text"
+            className="auth-input"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+            placeholder="Username"
+            required
+          />
+
+          <div className="auth-label">Password</div>
+          <input
+            type="password"
+            className="auth-input"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            placeholder="Password"
+            required
+          />
+
           <button className="auth-button" type="submit">
             Enter
           </button>

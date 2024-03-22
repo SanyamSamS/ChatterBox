@@ -3,31 +3,28 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Messages from './pages/Messages';
 import Login from './pages/Login';
-import Header from './components/Header';
+
+import { useState } from 'react';
 
 // const express = require('express');
 // const session = require('express-session');
 
 // const app = express();
-
-const user = false // change to true to see messages
+// change to true to see messages
 
 function App() {
-  if (!user){
+
+  const [user, setUser] = useState(undefined)
+
   return (
-    <main>
-    <Header />
-    <Login  />
-    </main>
-  )} 
-  else {
-    return (
-      <main>
-      <Header />
-      <Messages  />
-      </main>
-    )
-  }
+    <div>
+      {!user ? (
+        <Login onAuth={setUser} />
+      ) : (
+        <Messages user={user} />
+      )}
+    </div>
+  );
 }
 
 export default App
