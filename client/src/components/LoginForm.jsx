@@ -1,17 +1,19 @@
 import axios from "axios";
-import { useState } from "react"; // Import useState
+import { useState } from "react"; 
 
 function LoginForm(props) {
   // Initialize state for username and password
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
+  const VITE_API_URL = import.meta.env.VITE_API_URL;
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
     // Use state values for username and password in the request
-    axios.post("http://localhost:3000/authenticate", { username, password })
-      .then((r) => {
+    axios.post(`${VITE_API_URL}/authenticate`, { username, password })
+      .then(() => {
         // Assuming your server responds with appropriate data for ChatEngine authentication
         props.onAuth({ username, secret: password }); // Use the state values directly
       })
