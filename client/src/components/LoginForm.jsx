@@ -12,7 +12,7 @@ function LoginForm(props) {
     e.preventDefault();
 
     // Use state values for username and password in the request
-    axios.post('http://localhost:3000/authenticate', { username, password })
+    axios.post(`${VITE_API_URL}/authenticate`, { username, password })
       .then(() => {
         // Assuming your server responds with appropriate data for ChatEngine authentication
         props.onAuth({ username, secret: password }); // Use the state values directly
