@@ -16,44 +16,51 @@ function LoginForm(props) {
       .then(() => {
         // Assuming your server responds with appropriate data for ChatEngine authentication
         props.onAuth({ username, secret: password }); // Use the state values directly
+        console.log(username, password);
       })
       .catch((error) => {
         console.error(error);
+        console.log(username, password);
       });
   };
 
   return (
-    <div className="background">
-      <form onSubmit={handleSubmit} className="form-card">
-        <div className="form-title">Login</div>
+    <div className="login-info">
+  <div className="background">
+    <form onSubmit={handleSubmit} className="form-card">
+      <div className="form-title">Chatter with your favourite crew.</div>
 
-        <div className="auth">
-          <div className="auth-label">Username</div>
-          <input
-            type="text"
-            className="auth-input"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            placeholder="Username"
-            required
-          />
 
-          <div className="auth-label">Password</div>
-          <input
-            type="password"
-            className="auth-input"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            placeholder="Password"
-            required
-          />
+      <div className="auth">
+        <div className="auth-label"></div>
+        <input
+          type="text"
+          className="auth-input"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+          placeholder="Username"
+          required
+        />
 
-          <button className="auth-button" type="submit">
-            Enter
-          </button>
-        </div>
-      </form>
-    </div>
+
+        <div className="auth-label"></div>
+        <input
+          type="password"
+          className="auth-input"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          placeholder="Password"
+          required
+        />
+
+
+        <button className="auth-button" type="submit">
+          Login
+        </button>
+      </div>
+    </form>
+  </div>
+  </div>
   );
 }
 
