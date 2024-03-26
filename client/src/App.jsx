@@ -17,8 +17,6 @@ function App() {
       ) : (
         <Messages user={user} />
       )}
-      <p>Hello world</p>
-
     </div>
   );
 }
