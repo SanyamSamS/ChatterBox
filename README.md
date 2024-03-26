@@ -1,8 +1,41 @@
-# React + Vite
+# ChatterBox
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+ChatterBox is a modern messaging application designed to simplify and enhance online communication. It offers real-time messaging capabilities within a user-friendly interface, enabling users to effortlessly stay connected with friends, family, and colleagues.
 
-Currently, two official plugins are available:
+## Features
+- Real-time Messaging 
+- User Authentication 
+- Group Chats: Communicate with multiple being spontaneously 
+- Responsive Design 
+- Read Receipts and User typing icons
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+
+#### Front-end 
+- React 
+- Vite
+- CSS
+- Style components 
+- React Router
+
+#### Back-end 
+- Node.js 
+- Express.js
+- MongoDB
+- Mongoose
+- ChatEngine 
+
+#### Deployment 
+- Heroku
+
+## Usage
+Use ChatterBox to enhance your daily communications. Whether you're sharing important information with your team or staying in touch with loved ones, ChatterBox makes it easy and enjoyable.
+
+## License
+MIT License. See LICENSE for more information.
+
+## Contributors 
+- [Sanyam Singh](https://github.com/SanyamSamS)
+- [Kevin Quach](https://github.com/quachies)
+- [Mohanad Saqr](https://github.com/mohanad-saqr)

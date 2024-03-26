@@ -16,11 +16,11 @@ function LoginForm(props) {
       .then(() => {
         // Assuming your server responds with appropriate data for ChatEngine authentication
         props.onAuth({ username, secret: password }); // Use the state values directly
-        console.log(username, password);
+        // console.log(username, password);
       })
       .catch((error) => {
         console.error(error);
-        console.log(username, password);
+        // console.log(username, password);
       });
   };
 
