@@ -30,6 +30,11 @@ ChatterBox is a modern messaging application designed to simplify and enhance on
 - [Heroku](https://chatterbox-smkp-67606edb58a4.herokuapp.com/)
 - [GitHub](https://github.com/SanyamSamS/ChatterBox)
 
+![image](https://github.com/SanyamSamS/ChatterBox/assets/144437895/10028d23-8351-4b55-8c2f-b327b7304676)
+![image](https://github.com/SanyamSamS/ChatterBox/assets/144437895/895e8079-3f39-4a62-9e8f-c0b28d55229f)
+
+
+
 ## Usage
 Use ChatterBox to enhance your daily communications. Whether you're sharing important information with your team or staying in touch with loved ones, ChatterBox makes it easy and enjoyable.
 
