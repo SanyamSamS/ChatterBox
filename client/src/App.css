@@ -203,12 +203,8 @@ header {
   background-color: #51597b !important;
 }
 
-.ce-chat-title-text {
-  background-color: #51597b !important;
-}
-
 .ce-chat-subtitle-text {
-  background-color: #51597b !important;
+  color: #51597b !important;
 }
 
 .ce-message-bubble {
