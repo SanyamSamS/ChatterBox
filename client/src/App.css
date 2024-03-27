@@ -213,6 +213,7 @@ header {
 
 .ce-message-bubble {
   background-color: #51597b !important;
+  color: white !important;
 }
 
 .ce-primary-button {
