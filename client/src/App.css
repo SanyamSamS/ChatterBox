@@ -107,6 +107,11 @@ header {
   margin: 2vh 0vw 2vh 0vw;
 }
 
+.profile-message-container {
+  display: flex;
+  flex-direction: column;
+}
+
 /* --------------------------- RECENT CHATS ------------------------------ */
 
 .recent-chats {
@@ -195,6 +200,18 @@ header {
 
 .send-button {
   border-radius: 50% !important;
+  background-color: #51597b !important;
+}
+
+.ce-chat-title-text {
+  background-color: #51597b !important;
+}
+
+.ce-chat-subtitle-text {
+  background-color: #51597b !important;
+}
+
+.ce-message-bubble {
   background-color: #51597b !important;
 }
 
