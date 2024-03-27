@@ -3,7 +3,7 @@ import { ListGroup } from "react-bootstrap";
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <div>
+      <div className="profile-message-container">
         <img
           src="/profile-blue.png"
           className="sidebar-list-item"
@@ -16,15 +16,15 @@ const Sidebar = () => {
           id="icon"
           href="#messages"
         ></img>
-        </div>
-        <div>
+      </div>
+      <div>
         <img
           src="/settings-blue.png"
           className="sidebar-list-item spin"
           id="icon"
           href="#settings"
         ></img>
-        </div>
+      </div>
     </div>
   );
 };

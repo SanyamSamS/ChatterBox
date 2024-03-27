@@ -107,6 +107,11 @@ header {
   margin: 2vh 0vw 2vh 0vw;
 }
 
+.profile-message-container {
+  display: flex;
+  flex-direction: column;
+}
+
 /* --------------------------- RECENT CHATS ------------------------------ */
 
 .recent-chats {
@@ -198,6 +203,18 @@ header {
   background-color: #51597b !important;
 }
 
+.ce-chat-title-text {
+  background-color: #51597b !important;
+}
+
+.ce-chat-subtitle-text {
+  background-color: #51597b !important;
+}
+
+.ce-message-bubble {
+  background-color: #51597b !important;
+}
+
 /* --------------------------- LOGIN PAGE ------------------------------ */
 
 
@@ -231,9 +248,9 @@ header {
   height: 3vw;
   font-size: larger;
   border-radius: 15px;
-  border: solid rgb(155, 155, 155);
+  border: solid 1px rgb(155, 155, 155);
   outline: none;
-  padding: 1vh 1vw;
+  padding: 15px;
   color: rgb(90, 90, 90);
 }
 
