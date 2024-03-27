@@ -203,6 +203,10 @@ header {
   background-color: #51597b !important;
 }
 
+.ce-chat-title-text {
+  color: #51597b !important;
+}
+
 .ce-chat-subtitle-text {
   color: #51597b !important;
 }
@@ -210,6 +214,19 @@ header {
 .ce-message-bubble {
   background-color: #51597b !important;
 }
+
+.ce-primary-button {
+  background-color: #51597b !important;
+}
+
+#ce-send-message-button {
+  background-color: #51597b !important;
+}
+
+.ce-chat-unread-dot {
+  background-color: #51597b !important;
+}
+
 
 /* --------------------------- LOGIN PAGE ------------------------------ */
 
