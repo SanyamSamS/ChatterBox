@@ -12,22 +12,23 @@ ChatterBox is a modern messaging application designed to simplify and enhance on
 
 ## Technologies Used
 
-#### Front-end 
+### Front-end 
 - React 
 - Vite
 - CSS
 - Style components 
 - React Router
 
-#### Back-end 
+### Back-end 
 - Node.js 
 - Express.js
 - MongoDB
 - Mongoose
 - ChatEngine 
 
-#### Deployment 
-- Heroku
+### Deployment 
+- [Heroku](https://chatterbox-smkp-67606edb58a4.herokuapp.com/)
+- [GitHub](https://github.com/SanyamSamS/ChatterBox)
 
 ## Usage
 Use ChatterBox to enhance your daily communications. Whether you're sharing important information with your team or staying in touch with loved ones, ChatterBox makes it easy and enjoyable.
